@@ -43,47 +43,14 @@ export const Register = (props) => {
           name="password"
         />
         <button type="submit">Log In</button>
+        <label htmlFor="gender">Do you any have Tec Experience Before</label>
+        <select>
+          <option>Yes</option>
+        </select>
       </form>
       <button className="link-btn" onClick={() => props.onFormSwitch("login")}>
         Already have an account? Login here.
       </button>
-
-      {/* ... */}
-
-      <form>
-        <div className="radio">
-          <label>
-            <input
-              type="radio"
-              value="option1"
-              checked={this.state.selectedOption === "option1"}
-              onChange={this.handleOptionChange}
-            />
-            Option 1
-          </label>
-        </div>
-        <div className="radio">
-          <label>
-            <input
-              type="radio"
-              value="option2"
-              checked={this.state.selectedOption === "option2"}
-              onChange={this.handleOptionChange}
-            />
-            Option 2
-          </label>
-        </div>
-        <div className="radio">
-          <label>
-            <input
-              type="radio"
-              value="option3"
-              checked={this.state.selectedOption === "option3"}
-              onChange={this.handleOptionChange}
-            />
-          </label>
-        </div>
-      </form>
     </div>
   );
 };
